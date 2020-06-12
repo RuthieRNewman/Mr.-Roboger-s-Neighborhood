@@ -1,42 +1,12 @@
 $(document).ready(function() {
-  $("form#userInput").submit(function(event){
+  $("form#numberInput").submit(function(event){
   event.preventDefault();
-  const userNumber = parseInt($("input#userNumber").val());
-  const mrRobogersResponse = toMrRoboger(userNumber)
+  const userNumber = ($("input#userNumber").val());
+  $(".mrRobogersResponse").text(mrRobogersResponse(userNumber));
   
-  function toMrRoboger(userNumber) {
-    userNumberArray = userNumber.split("");
-    console.log(userNumberArray)  
-  } 
-  
-
-
-  });
+  function mrRobogersResponse(userNumberInput) {
+  let userArray = userNumberInput.split(" ");
+  console.log(userArray)
+  }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-form id="numberInput"
-input id="userNumber"
-div id="mrRobogersResponse"
-*/
+});
