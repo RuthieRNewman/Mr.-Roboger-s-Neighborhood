@@ -28,15 +28,15 @@ The site uses functions, looping, arrays and variables written in Javascript to 
 
 1. To setup:
 
-    *Clone the repository from GitHub: 
+    * Clone the repository from GitHub: 
 
-    *Open the repository in a text editor, such as VS Code or atom. 
+    * Open the repository in a text editor, such as VS Code or atom. 
 
 2. To view the site:
 
-    *Drag and drop the index.html file into a browser
+    * Drag and drop the index.html file into a browser
 
-    *To open the site in a browser from the terminal, run the command: ‘open index.html’ in the terminal prompt. 
+    * To open the site in a browser from the terminal, run the command: ‘open index.html’ in the terminal prompt. 
 
 ## Known Bug
 
@@ -57,6 +57,6 @@ jQuery
 
 ### License
 
-*This software is licensed under the MIT license
+**This software is licensed under the MIT license**
 
 Copyright (c) 2020 **Ruthie Newman**
