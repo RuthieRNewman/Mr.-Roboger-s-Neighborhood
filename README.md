@@ -9,9 +9,7 @@
 This site was created with HTML, CSS and Javascript to meet the parameters of an independent project in the Epicodus curriculum. 
 The site uses functions, looping, arrays and variables written in Javascript to take a user's number input and return an array of numbers and text depending on the values inputted.
 
-### Specs
-| Spec | Input | Output |
-| :-------------     | :------------- | :------------- |
+### Specifications
 
 | **The program takes a number input from the user and returns a range of numbers from 0 to the users inputted number** | User input: "5" | Output: "0,1,2,3,4,5" |
 
