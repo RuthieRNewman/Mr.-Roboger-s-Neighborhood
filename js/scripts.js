@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("form#numberInput").submit(function(event){
   event.preventDefault();
   const userNumber = ($("input#userNumber").val());
+  
   $(".mrRobogersResponse").text(mrRobogersResponse(userNumber));
   
   
@@ -29,8 +30,15 @@ $(document).ready(function() {
     let mrRobogersResponse = "Beep!"
     console.log(mrRobogersResponse);
     return mrRobogersResponse;
+  }else if 
+  ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === false)) {
+    let userString = userArray.join();
+    let userFinalNumber = parseInt(userString);
+    console.log(userString);
+    //for (let index= userString; index <= userString; index += userString) {
+      //console.log(index);
+    }
+    }
   }
-}
-  }
-  });
+});
 });
