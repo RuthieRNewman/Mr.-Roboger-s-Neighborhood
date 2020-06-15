@@ -9,6 +9,7 @@ $(document).ready(function() {
 
 
   
+  
   function mrRobogersResponse(userNumberInput) {
   let userArray = userNumberInput.split('');
   
@@ -28,44 +29,25 @@ $(document).ready(function() {
     let mrRobogersResponse = "Beep!"
     return mrRobogersResponse;
 
-    }else if 
-    ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === false) && (userArray.includes("4") === true)) {
-      let mrRobogersResponse = ["Beep!" , "Boop!", "Won't you be my neighbor?", 4];
-      mrRobogersResponseJoined = mrRobogersResponse.join(', ');
-      return mrRobogersResponseJoined;
+    }else {
+      let userArrayJoined = userArray.join(); 
+      
+      console.log(userArrayJoined);
+      let userInteger = parseInt(userArrayJoined);
+      
+      console.log(userInteger);
+      return userInteger;
 
-    }else if 
-    ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === false) && (userArray.includes("4") === false) && (userArray.includes("5") === true)) {
-      let mrRobogersResponse = ["Beep!", "Boop!", "Won't you be my neighbor?", 4, 5];
-      mrRobogersResponseJoined = mrRobogersResponse.join(', ');
-      return mrRobogersResponseJoined;
-    
-    }else if 
-    ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === false) && (userArray.includes("4") === false) && (userArray.includes("5") === false) && (userArray.includes("6") === true)) {
-      let mrRobogersResponse = ["Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6];
-      return mrRobogersResponseJoined;
-    
-    }else if 
-    ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === false) && (userArray.includes("4") === false) && (userArray.includes("5") === false) 
-    && (userArray.includes("6") === false) && (userArray.includes("7") === true)) {
-    let mrRobogersResponse = ["Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7];
-    mrRobogersResponseJoined = mrRobogersResponse.join(', ');
-    return mrRobogersResponseJoined;
-    
-    }else if 
-    ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === false) && (userArray.includes("4") === false) && (userArray.includes("5") === false) 
-    && (userArray.includes("6") === false) && (userArray.includes("7") === false) && (userArray.includes("8") === true)) {
-    let mrRobogersResponse = ["Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8];
-    mrRobogersResponseJoined = mrRobogersResponse.join(', ');
-    return mrRobogersResponseJoined;
+      function integerOutput(userInteger){
+        const countUpToUserInteger = []; 
+        for (const i=0; i=userInteger.length; i+=1) {
+        
+          countUpToUserInteger = (i++)
+          console.log(countUpToUserInteger);
 
-    }else if  
-    ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === false) && (userArray.includes("4") === false) && (userArray.includes("5") === false) 
-    && (userArray.includes("6") === false) && (userArray.includes("7") === false) && (userArray.includes("8") === false) && (userArray.includes("9") === true)) {
-    let mrRobogersResponse = ["Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9];
-    mrRobogersResponseJoined = mrRobogersResponse.join(', ');
-    return mrRobogersResponseJoined;
-    
+
+      }
     }
-  }   
-  }   
+    }
+  }
+}
