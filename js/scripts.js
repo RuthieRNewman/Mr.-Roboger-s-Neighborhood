@@ -3,10 +3,11 @@ $(document).ready(function() {
   event.preventDefault();
   const userNumber = ($("input#userNumber").val());
   const result = mrRobogersResponse(userNumber);
-
+  
   $("#output").text(result);
 });
 });
+
 
 
   
@@ -30,22 +31,25 @@ $(document).ready(function() {
     let mrRobogersResponse = "Beep!"
     return mrRobogersResponse;
 
-    }else {
+    }else if ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === false)) {
+
       let userArrayJoined = userArray.join(); 
       
       console.log(userArrayJoined);
       let userInteger = parseInt(userArrayJoined);
       
-      console.log(userInteger);
-      return userInteger;
-
-      function countUpTo(userInteger) {  
-        for (i =0; i <= userInteger.length; i++) {
-        let output  = (userInteger[i] += 1);
-        console.log(countUpToOutput);
-        return countUpTo
-        }
-    }
+      //console.log(userInteger);
+      //return userInteger
+      //function countOutPut(userInteger){
+        const counter = "1";
+        parseInt(counter);
+        console.log(counter)
+        
+        for (let index = counter; index <= userInteger; i += counter){
+          console.log(index);
+          return userInteger * 10;
     }
   }
 }
+  }
+
