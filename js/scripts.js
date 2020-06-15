@@ -3,6 +3,7 @@ $(document).ready(function() {
   event.preventDefault();
   const userNumber = ($("input#userNumber").val());
   const result = mrRobogersResponse(userNumber);
+
   $("#output").text(result);
 });
 });
@@ -38,15 +39,12 @@ $(document).ready(function() {
       console.log(userInteger);
       return userInteger;
 
-      function integerOutput(userInteger){
-        const countUpToUserInteger = []; 
-        for (const i=0; i=userInteger.length; i+=1) {
-        
-          countUpToUserInteger = (i++)
-          console.log(countUpToUserInteger);
-
-
-      }
+      function countUpTo(userInteger) {  
+        for (i =0; i <= userInteger.length; i++) {
+        let output  = (userInteger[i] += 1);
+        console.log(countUpToOutput);
+        return countUpTo
+        }
     }
     }
   }
