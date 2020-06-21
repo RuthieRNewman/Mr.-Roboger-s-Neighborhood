@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("form#numberInput").submit(function(event){
   event.preventDefault();
-  const userNumber = ($("input#userNumber").val());
+  const userNumber = parseInt($("input#userNumber").val());
   const result = mrRobogersResponse(userNumber);
   
   $("#output").text(result);
@@ -12,44 +12,36 @@ $(document).ready(function() {
 
   
   
-  function mrRobogersResponse(userNumberInput) {
-  let userArray = userNumberInput.split('');
-  
-
-  for (i=0; i=userArray.length; i++){
-    if (userArray.includes("3") === true){
+  function mrRobogersResponse(userNumber) {
+  let userInteger = [userNumber];
+  console.log(userInteger)
+  for (i=0; i=userInteger; i++){
+    if (userInteger.includes(3) === true){
     let mrRobogersResponse = "Won't you be my neighbor?"
-    return mrRobogersResponse;
+    console.log(mrRobogersResponse);
 
-    }else if
-      ((userArray.includes("3") === false) && (userArray.includes("2") === true)){
+    }else if (userInteger.includes(2) === true) {
       let mrRobogersResponse = "Boop!"
-      return mrRobogersResponse;
+    console.log(mrRobogersResponse);
 
     }else if
-    ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === true)) {
+    (userInteger.includes(1) === true) {
     let mrRobogersResponse = "Beep!"
-    return mrRobogersResponse;
+    console.log(mrRobogersResponse);
 
-    }else if ((userArray.includes("3") === false) && (userArray.includes("2") === false) && (userArray.includes("1") === false)) {
-
-      let userArrayJoined = userArray.join(); 
-      
-      console.log(userArrayJoined);
-      let userInteger = parseInt(userArrayJoined);
-      
-      //console.log(userInteger);
-      //return userInteger
-      //function countOutPut(userInteger){
-        const counter = "1";
-        parseInt(counter);
-        console.log(counter)
+    }else{
+      let counter = parseInt("1");
+      for (i=0; i=userInteger; i = counter){
+        console.log(userInteger)
+        let mrRobogersResponse = [i];
+        //return mrRobogersResponse
         
-        for (let index = counter; index <= userInteger; i += counter){
-          console.log(index);
-          return userInteger * 10;
+      }
     }
+
   }
-}
+  return mrRobogersResponse;
   }
+
+
 
