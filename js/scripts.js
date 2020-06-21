@@ -11,13 +11,12 @@ $(document).ready(function() {
   function mrRobogersResponse(userNumber) {
   let countTo = [userNumber];
   let countBy = parseInt("1");  
-  let finalOutPut = [];  
+
   console.log(countTo)
   for (index = countBy; index <= countTo; index += countBy) {
     if (countTo.includes(3) === true) {
-      console.log(true);
-      countTo.forEach(element => userNumber.push("wont you be?"));
-   
+     let mrRobogersResponse = "Wont you be my neighbor?"
+
     }else if (countTo.includes(2) === true) {
       let mrRobogersResponse = "Boop!"
     console.log(mrRobogersResponse);
@@ -29,7 +28,7 @@ $(document).ready(function() {
 
     }else{
       console.log(index);
-      $("#output").append("<li>" + index + "</li>");
+      $("#output").append("<p>" + index + "</p>");
      }
     }
   }
