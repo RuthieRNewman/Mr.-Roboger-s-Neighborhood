@@ -8,40 +8,33 @@ $(document).ready(function() {
 });
 });
 
-
-
-  
-  
   function mrRobogersResponse(userNumber) {
-  let userInteger = [userNumber];
-  console.log(userInteger)
-  for (i=0; i=userInteger; i++){
-    if (userInteger.includes(3) === true){
-    let mrRobogersResponse = "Won't you be my neighbor?"
-    console.log(mrRobogersResponse);
-
-    }else if (userInteger.includes(2) === true) {
+  let countTo = [userNumber];
+  let countBy = parseInt("1");  
+  let finalOutPut = [];  
+  console.log(countTo)
+  for (index = countBy; index <= countTo; index += countBy) {
+    if (countTo.includes(3) === true) {
+      console.log(true);
+      countTo.forEach(element => userNumber.push("wont you be?"));
+   
+    }else if (countTo.includes(2) === true) {
       let mrRobogersResponse = "Boop!"
     console.log(mrRobogersResponse);
 
     }else if
-    (userInteger.includes(1) === true) {
+    (countTo.includes(1) === true) {
     let mrRobogersResponse = "Beep!"
     console.log(mrRobogersResponse);
 
     }else{
-      let counter = parseInt("1");
-      for (i=0; i=userInteger; i = counter){
-        console.log(userInteger)
-        let mrRobogersResponse = [i];
-        //return mrRobogersResponse
-        
-      }
+      console.log(index);
+      $("#output").append("<li>" + index + "</li>");
+     }
     }
+  }
 
-  }
-  return mrRobogersResponse;
-  }
+
 
 
 
