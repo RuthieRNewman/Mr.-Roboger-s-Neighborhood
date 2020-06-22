@@ -4,6 +4,7 @@ $(document).ready(function() {
   const userNumber = parseInt($("input#userNumber").val());
   const result = mrRobogersResponse(userNumber); 
   $("#output").text(result);
+  $("#output").append("<p>" + index + "</p>");
 });
 });
 
@@ -12,24 +13,17 @@ $(document).ready(function() {
   let countTo = [userNumber];
   let countBy = parseInt("1"); 
   let output = []; 
-  console.log(countTo)
-  for (index = countBy; index <= countTo; index += countBy) {
+  for (let index = countBy; index <= countTo; index += countBy) {
     if (countTo.includes(3) === true) {
       output.push("Won't you be my neighbor?");  
-      console.log(output);
-
     }else if (countTo.includes(2) === true) {
-      let mrRobogersResponse = "Boop!"
-    console.log(mrRobogersResponse);
-
+      output.push("Boop!");  
     }else if
     (countTo.includes(1) === true) {
-    let mrRobogersResponse = "Beep!"
-    console.log(mrRobogersResponse);
-
+      output.push("Beep!");  
     }else{
-      console.log(index);
-      $("#output").append("<p>" + index + "</p>");
-     }
+      output.push(index);
     }
+    }
+    return output
   }
